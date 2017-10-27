@@ -1,0 +1,346 @@
+.ui-autocomplete li {
+    margin-bottom: 0;
+    padding: 4px 10px;
+    white-space: nowrap;
+    text-align: left;
+    cursor: pointer;
+}
+.ui-autocomplete {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    z-index: 10000;
+    border: 1px solid #5b9dd9;
+    -webkit-box-shadow: 0 1px 2px rgba(30,140,190,.8);
+    box-shadow: 0 1px 2px rgba(30,140,190,.8);
+    background-color: #fff;
+}
+.ui-autocomplete .ui-state-focus {
+    background-color: #ddd;
+}
+.jumbotron #searchResults p,
+.jumbotron .singleboard p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    color: #888;
+}
+.card__content {
+    padding: 24px 24px;
+    position: relative;
+    background-color: #f4f4f4;
+}
+.card {
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    display: block;
+    float: left;
+    width: 100%;
+}
+#chartdiv {
+  width: 100%;
+  height: 280px;
+}
+a[title="JavaScript charts"] {
+    display: none !important;
+    opacity: 0 !important;
+}
+.singleboard .card__content {
+    padding-bottom: 0;
+}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.mt30{margin-top:30px;}
+.mt40{margin-top:40px;}
+.mt50{margin-top:50px;}
+.btabs {
+    float: left;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+#searchResults .card__content {
+    display: block;
+}
+.details a.btn.details {
+    background-color: #31404b;
+    padding: 0px 20px;
+    position: relative;
+    text-align: right;
+    float: right;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 0;
+    margin-right: 12px;
+    overflow: visible;
+}
+.details a.btn.details:after {
+    content: '';
+    background: transparent;
+    width: 0px;
+    height: 8px;
+    position: absolute;
+    top: 0;
+    right: -11px;
+    border-right: 0px solid transparent;
+    border-left: 10px solid #31404b;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.details_Content {
+    display: block;
+    width: 100%;
+}
+
+/*Ribbon*/
+.rangTag {
+    position: absolute;
+    right: -8px;
+    top: 0;
+    background: #31404b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.rangTag > div {
+    padding: 5px 15px;
+}
+.ribbon:after {
+    content: '';
+    width: 0px;
+    height: 10px;
+    background: transparent;
+    position: absolute;
+    bottom: -10px;
+    right: -8px;
+    z-index: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 8px solid transparent;
+    border-left: 8px solid #222;
+}
+
+.details_Content caption {
+    background: #31404b;
+    margin-top: 20px;
+    color: #fff;
+}
+.details_Content caption h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+}
+.message.bg-info {
+    color: #000;
+    padding: 9px;
+    display: block;
+    overflow: hidden;
+    margin-bottom: 9px;
+}
+
+.message.bg-info p {
+    margin-bottm:5px;
+}
+.btn.btn-primary
+{
+    background: linear-gradient(to bottom, #ff7f10 0%,#f07001 100%);
+    border-bottom: 1px solid #cb5e00;
+    display: block;
+    margin-top: 20px;
+    padding: 9px 20px;
+    margin-bottom: 15px;
+    float: right;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 300ms ease-in;
+}
+ul.list-inline li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+}
+ul#bmenu {
+    margin: 0;
+}
+form#scoreboardSearch select{
+    width: 100%;
+}
+form#scoreboardSearch input[type="number"],
+form#scoreboardSearch input[type="text"]{
+    background: #fbfbfb!important;
+}
+
+form#scoreboardSearch .form-control, 
+form#scoreboardSearch .input-text, 
+form#scoreboardSearch select
+{
+    margin-bottom: 20px;
+}
+
+.form-control, .input-text, select {
+    width: 100%;
+    appearance: none;
+    height: 50px;
+    padding: 12px 16px;
+    line-height: 1.73333;
+    font-size: 15px;
+    color: #31404b;
+    background-color: #fff;
+    border: 1px solid #e4e7ed;
+    border-radius: 2px;
+    box-shadow: none;
+    transition: border-color ease-in-out 0.15s;
+}
+
+form#scoreboardSearch .row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col-md-4.col-sm-4 {
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+.col-md-3.col-sm-3 {
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+.form-group{
+    float: left;
+    width: 100%;
+}
+form#scoreboardSearch input.btn.btn-block.btn-lg.btn-primary {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 16px;
+}
+form#scroboafd_form .form-group {
+    margin-top: 20px;
+}
+form#scroboafd_form .form-group label{
+    font-weight: bold;
+}
+.singleboard {
+    display: block;
+    width: 100%;
+    float: left;
+}
+div#searchResults {
+    margin-top: 50px;
+    float: left;
+    width: 100%;
+}
+div#searchResults h4.sp-table-caption {
+    background: rgba(23, 152, 232, 0.5);
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 0px;
+    border-left: 5px solid #f77708;
+}
+div#searchResults .col-md-6 {
+    max-width: 50%;
+    float: left;
+    width: 50%;
+    margin-bottom: 5px;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.card__content > .details {
+    display: block;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+/*Table*/
+.table-bordered {
+    border: 1px solid #e4e7ed;
+}
+caption {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: left;
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #e4e7ed;
+}
+table, .table {
+    width: 100%;
+    max-width: 100%;
+}
+table > thead > tr > th, table > thead > tr > td, table > tbody > tr > th, table > tbody > tr > td, table > tfoot > tr > th, table > tfoot > tr > td, .table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 13px 10px;
+    font-size: 11px;
+}
+.details_Content caption h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 19px;
+    text-align: center;
+    padding: 12px;
+}
+.table-hover > tbody > tr:hover, .table-hover > tbody > tr.highlighted:hover {
+    background-color: #f5f7f9;
+}
+form#scoreboardSearch {
+    clear: both;
+    display: block;
+    width: 100%;
+    float: left;
+}
+p.success {
+    color: #fff;
+    background: green;
+    padding: 6px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+p.error {
+    color: #fff;
+    background: red;
+    padding: 6px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:320px){
+    form#scoreboardSearch .col-xs-6{width:50%;}
+}
+
+
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { /* STYLES GO HERE */
+
+body.page .wrapper.spacer {
+    width: 520px !important;
+}
+
+}
+
+.note {
+    font-size: 10px;
+    line-height: 12px;
+}
