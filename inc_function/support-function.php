@@ -152,7 +152,9 @@ function search_from_db(){ ?>
                         </div>
                         <div class="note" style="display: none;">
                           <small><i>Note: A few of the categories are listed on the chart if you turn your mobile device horizontal. To see all categories, log into your account on a desktop or laptop.</i></small>
-                        </div>
+</div>
+         
+                        
                       </div>
                 </div>
             </div>
@@ -243,11 +245,38 @@ function search_from_db(){ ?>
             "type": "serial",
             "theme": "light",
             "startDuration": 2,
-
             "dataProvider": [ 
           <?php 
             $colors = array('FF0F00', 'FF6600', 'FF9E01', 'FCD202', 'F8FF01', 'B0DE09', '04D215', '0D8ECF', '0D52D1', '2A0CD0', '8A0CCF', 'CD0D74', '754DEB', 'DDDDDD', '333333');
             $cnt = 0;
+          /*  $arrayItems = array(
+              'total' => 1,
+              'attendance' => 1,
+              'gpa' => 35,
+              'infractions' => 3,
+              'community_service' => 0,
+              'extracurricular' => 5,
+              'act' => 1,
+              'sat' => 1,
+             /* 'recommendation' => 3,
+              'job' => 10,*/
+             /* 'social_share' => 5,
+              'savings_account' => 3
+            );
+            $count = array_diff_key($count, $arrayItems);*/
+
+            unset($count->infractions);
+            unset($count->extracurricular);
+            unset($count->sat);
+            unset($count->act);
+            unset($count->recommendation);
+            unset($count->savings_account);
+            
+            
+            
+
+
+
             foreach($count as $k => $cart_i): if($k != 'total'): 
               switch($k):
               case 'community_service':
@@ -259,13 +288,13 @@ function search_from_db(){ ?>
               $hours = $hours + $main;
             ?>    
             {
-              "title": "<?= ucfirst( str_replace('_', ' ', $k) );  ?>",
+              "title": "Serv.",
               "value": <?= $hours;  ?>,
               "color": "#<?= $colors[$cnt];  ?>"
             }, 
           <?php 
             break;
-              case 'savings_account':
+            case 'savings_account':
             ?>    
             {
               "title": "Bank Account",
@@ -301,6 +330,25 @@ function search_from_db(){ ?>
             }, 
           <?php 
             break;
+            case 'attendance':
+            ?>
+            {
+              "title": "Attn.",
+              "value": <?= (int)$cart_i / $count->total;  ?>,
+              "color": "#<?= $colors[$cnt];  ?>"
+            }, 
+            <?php
+            break;
+            case 'social_share':
+            ?>
+            {
+              "title": "SS",
+              "value": <?= (int)$cart_i / $count->total;  ?>,
+              "color": "#<?= $colors[$cnt];  ?>"
+            }, 
+            <?php
+            break;
+
             default:
             ?>    
             {
