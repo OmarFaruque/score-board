@@ -247,7 +247,7 @@ function search_from_db(){ ?>
             "startDuration": 2,
             "dataProvider": [ 
           <?php 
-            $colors = array('FF0F00', 'FF6600', 'FF9E01', 'FCD202', 'F8FF01', 'B0DE09', '04D215', '0D8ECF', '0D52D1', '2A0CD0', '8A0CCF', 'CD0D74', '754DEB', 'DDDDDD', '333333');
+            $colors = array('19F921', '28D6F9', '0F41A2', '26069D', '6E0FA3', 'B0DE09', '04D215', '0D8ECF', '0D52D1', '2A0CD0', '8A0CCF', 'CD0D74', '754DEB', 'DDDDDD', '333333');
             $cnt = 0;
           /*  $arrayItems = array(
               'total' => 1,

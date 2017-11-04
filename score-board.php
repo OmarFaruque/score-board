@@ -48,7 +48,7 @@ function score_board_input_form(){
 
   					<ul class="list-inline" id="bmenu">
   						<li><a class="btn btn-primary" href="<?= get_the_permalink( $post->ID, false );  ?>" title="">Score Board</a></li>
-  						<li><a class="btn btn-primary" href="<?= get_the_permalink( $post->ID, false );  ?>?sb=new" title="">Add New</a></li>
+  						<li><a class="btn btn-primary" href="<?= get_the_permalink( $post->ID, false );  ?>?sb=new" title="">NEW SEMESTER</a></li>
   						<li><a class="btn btn-primary" href="<?= get_the_permalink( $post->ID, false );  ?>?sb=csh" title="">Add Community Service</a></li>
   					</ul>
   				</div>
